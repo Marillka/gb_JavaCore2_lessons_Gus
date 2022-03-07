@@ -3,7 +3,6 @@ package lesson7.server;
 import lesson7.constants.Constants;
 
 import java.io.DataInputStream;
-import java.io.DataOutput;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
@@ -18,6 +17,7 @@ public class ClientHandler {
     private DataInputStream in;
     private DataOutputStream out;
     private String name;
+
 
     public ClientHandler(MyServer server, Socket socket) {
         try {
@@ -57,6 +57,7 @@ public class ClientHandler {
                     name = nick;
                     sendMessage(Constants.AUTH_OK_COMMAND + " " + nick);
                     server.broadcastMessage(nick + " Вошел в чат");
+                    server.broadcastMessage(server.getActiveClients());
                     server.subscribe(this);
                     return;
                 } else {
@@ -77,12 +78,21 @@ public class ClientHandler {
     private void readMessage() throws IOException {
         while (true) {
             String messageFromClient = in.readUTF();
-            System.out.println("Сообщение от " + name + ": " + messageFromClient);
-            if (messageFromClient.equals(Constants.END_COMMAND)) {
-                break;
+            //hint: можем получать команду
+            if (messageFromClient.startsWith(Constants.CLIENTS_LIST_COMMAND)) {
+                sendMessage((server.getActiveClients()));
+            } else {
+                System.out.println("Сообщение от " + name + ": " + messageFromClient);
+                if (messageFromClient.equals(Constants.END_COMMAND)) {
+                    break;
+                }
+                server.broadcastMessage(name + ": " + messageFromClient);
             }
-            server.broadcastMessage(messageFromClient);
         }
+    }
+
+    public String getName() {
+        return name;
     }
 
     private void closeConnection() {

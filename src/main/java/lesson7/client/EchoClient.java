@@ -1,19 +1,18 @@
-package lesson6;
+package lesson7.client;
+
+import lesson7.constants.Constants;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.DataInputStream;
-import java.io.DataOutput;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
 public class EchoClient extends JFrame {
 
-    private final String SERVER_ADDRESS = "localhost";
-    private final int SERVER_PORT = 8089;
 
     private JTextField textField;
     private JTextArea textArea;
@@ -21,6 +20,7 @@ public class EchoClient extends JFrame {
     private Socket socket;
     private DataInputStream dataInputStream;
     private DataOutputStream dataOutputStream;
+    private String login;
 
     public EchoClient() {
         try {
@@ -32,7 +32,7 @@ public class EchoClient extends JFrame {
     }
 
     private void openConnection() throws IOException {
-        socket = new Socket(SERVER_ADDRESS, SERVER_PORT);
+        socket = new Socket(Constants.SERVER_ADDRESS, Constants.SERVER_PORT);
         dataInputStream = new DataInputStream(socket.getInputStream());
         dataOutputStream = new DataOutputStream(socket.getOutputStream());
         new Thread(() -> {
@@ -41,9 +41,18 @@ public class EchoClient extends JFrame {
                     String messageFromServer = dataInputStream.readUTF();
                     if (messageFromServer.equals("/end")) {
                         break;
+                    } else if (messageFromServer.startsWith(Constants.AUTH_COMMAND)) {
+                        String[] tokens = messageFromServer.split("\\s+");
+                        this.login = tokens[1];
+                        textArea.append("Успешно авторизован как " + login);
+                        textArea.append("\n");
                     }
-                    textArea.append(messageFromServer);
-                    textArea.append("\n");
+                        if (messageFromServer.startsWith(Constants.CLIENTS_LIST_COMMAND)) {
+                        // список клиентов
+                    } else {
+                        textArea.append(messageFromServer);
+                        textArea.append("\n");
+                    }
                 }
                 textArea.append("Соединение разорвано");
                 textField.setEnabled(false);
@@ -105,6 +114,26 @@ public class EchoClient extends JFrame {
         panel.add(textField, BorderLayout.CENTER);
 
         add(panel, BorderLayout.SOUTH);
+
+        JPanel loginPanel = new JPanel(new BorderLayout());
+        JTextField loginField = new JTextField();
+        loginPanel.add(loginField, BorderLayout.WEST);
+        JTextField passField = new JTextField();
+        loginPanel.add(passField, BorderLayout.CENTER);
+        JButton authButton = new JButton("Авторизоваться");
+        loginPanel.add(authButton, BorderLayout.EAST);
+        add(loginPanel, BorderLayout.NORTH);
+
+        authButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    dataOutputStream.writeUTF(Constants.AUTH_COMMAND + " " + loginField.getText() + " " + passField.getText());
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
 
         button.addActionListener(e -> sendMessage());
         textField.addActionListener(e -> sendMessage());
