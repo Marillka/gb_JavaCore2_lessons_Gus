@@ -6,6 +6,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.Optional;
 
 /**
  * Обработчик для конкретного клиента
@@ -50,11 +51,11 @@ public class ClientHandler {
             String str = in.readUTF();
             if (str.startsWith(Constants.AUTH_COMMAND)) {
                 String[] tokens = str.split("\\s+");// разбивает строку по пробелам. Получим массив длинной 3. В нулевом элементе команда, в первом логин, во втором пароль. \\s+ регулярное выражение, которое означает пробел один или больше пробелов.
-                String nick = server.getAuthService().getNickByLoginAndPass(tokens[1], tokens[2]);
+                Optional<String> nick = server.getAuthService().getNickByLoginAndPass(tokens[1], tokens[2]);
 
-                if (nick != null) {
+                    if (nick.isPresent()) {// isPresent() - есть значение или нет
                     // Авторизовались
-                    name = nick;
+                    name = nick.get();// так как nick - Optional, должны достать из него значение
                     sendMessage(Constants.AUTH_OK_COMMAND + " " + nick);
                     server.broadcastMessage(nick + " Вошел в чат");
                     server.broadcastMessage(server.getActiveClients());

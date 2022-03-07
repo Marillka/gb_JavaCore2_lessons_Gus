@@ -7,6 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Логика сервера.
@@ -68,11 +69,24 @@ public class MyServer {
         clients.remove(client);
     }
 
+//    public synchronized String getActiveClients() {
+//        StringBuilder sb = new StringBuilder(Constants.CLIENTS_LIST_COMMAND).append(" ");
+//        for (ClientHandler clientHandler: clients) {
+//            sb.append(clientHandler.getName()).append(" ");
+//        }
+//        return sb.toString();
+//    }
+
     public synchronized String getActiveClients() {
+        //  Берем массив ClientHandler, превращаем его в массив имен. Массив имен через пробел собираем в строчку и джоиним ее в streamBuilder.
         StringBuilder sb = new StringBuilder(Constants.CLIENTS_LIST_COMMAND).append(" ");
-        for (ClientHandler clientHandler: clients) {
-            sb.append(clientHandler.getName()).append(" ");
-        }
+        sb.append(clients.stream()
+                .map(c -> c.getName())
+                .collect(Collectors.joining(" ")));
+
+//        for (ClientHandler clientHandler : clients) {
+//            sb.append(clientHandler.getName()).append(" ");
+//        }
         return sb.toString();
     }
 }
