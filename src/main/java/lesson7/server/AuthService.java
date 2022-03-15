@@ -1,6 +1,7 @@
 package lesson7.server;
 
 
+import java.sql.SQLException;
 import java.util.Optional;
 
 /**
@@ -11,7 +12,7 @@ public interface AuthService {
     /**
      * Запустить сервис
      */
-    void start();
+    void start() throws SQLException;
 
     /**
      * Отключить сервер

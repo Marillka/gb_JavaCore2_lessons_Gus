@@ -25,7 +25,6 @@ public class BaseAuthService implements AuthService {
         System.out.println("Auth service is shutting down");
     }
 
-
     //    @Override
 //    public String getNickByLoginAndPass(String login, String pass) {
 //        for (Entry entry: entries) {
@@ -38,7 +37,6 @@ public class BaseAuthService implements AuthService {
 
     @Override
     public Optional<String> getNickByLoginAndPass(String login, String pass) {
-
         // Сначал из всех записей что есть отфильтровали те, что подходят по логину и паролю. Если что то осталось то из entry достали nick. а findFirst() - если что то есть возвращает этот объект, если нет не возарвщает.
        return  entries.stream()
                 .filter(entry -> entry.login.equals(login) && entry.password.equals(pass))
@@ -52,8 +50,6 @@ public class BaseAuthService implements AuthService {
 //        }
 //        return Optional.empty();// если ничего не нашли
     }
-
-
 
     private class Entry {
         private String login;

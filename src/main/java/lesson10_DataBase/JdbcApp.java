@@ -117,8 +117,6 @@ public class JdbcApp {
         } ;
     }
 
-
-
     // name = ' drop database; '
     private static void insertOneStudent(String name, String group) throws SQLException {
         // PreparedStatement - выражение, которое можно вызывать с различным набором параметров. НЕОБХОДИМО ЗАКРЫВАТЬ
