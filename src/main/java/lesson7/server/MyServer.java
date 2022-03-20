@@ -32,7 +32,7 @@ public class MyServer {
 
     public MyServer() {
         try (ServerSocket server = new ServerSocket(Constants.SERVER_PORT)) {
-            authService = new BaseAuthService();
+            authService = new DataBaseAuthService();
             authService.start();
 
 

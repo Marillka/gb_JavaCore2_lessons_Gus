@@ -4,34 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71431243-f455-4a80-a51e-efc6007c7ca4" name="Changes" comment="add lesson10 DataBase">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/FileApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/TryWithResourcesApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/lesson/ExceptionApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/lesson/MyCustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/множественное_наследование/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/множественное_наследование/Jumper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/множественное_наследование/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/множественное_наследование/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/пример_интерфейсов/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/пример_интерфейсов/Cater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/пример_интерфейсов/NewsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/пример_интерфейсов/OracleNewsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/пример_интерфейсов/Ship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/пример_интерфейсов/Swimable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/пример_интерфейсов/Transport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/пример_интерфейсов/TransportApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2_Exceptions/пример_интерфейсов/WaterTransport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/DataBaseAuthService.java" afterDir="false" />
+    <list default="true" id="71431243-f455-4a80-a51e-efc6007c7ca4" name="Changes" comment="add lesson2 Exceptions">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3_Collections/ListApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3_Collections/MapApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3_Collections/TreeApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3_Collections/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson10_DataBase/JdbcApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson10_DataBase/JdbcApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/server/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/server/BaseAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/BaseAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/server/DataBaseAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/DataBaseAuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/server/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/MyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson10_DataBase/JdbcApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson10_DataBase/JdbcApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/AuthService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/BaseAuthService$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/BaseAuthService$Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/BaseAuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/BaseAuthService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/MyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/MyServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +50,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
   </component>
-  <component name="RunManager" selected="Application.ExceptionApp">
+  <component name="RunManager" selected="Application.TreeApp">
+    <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson7.client.EchoClient" />
+      <module name="gb_JavaCore2_lessons_Gus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson7.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExceptionApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson2_Exceptions.lesson.ExceptionApp" />
       <module name="gb_JavaCore2_lessons_Gus" />
@@ -85,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson11_InputOuput.FileApp" />
+    <configuration name="ListApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson3_Collections.ListApp" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson11_InputOuput.*" />
+          <option name="PATTERN" value="lesson3_Collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson10_DataBase.JdbcApp" />
+    <configuration name="ServerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson7.server.ServerApp" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson10_DataBase.*" />
+          <option name="PATTERN" value="lesson7.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,25 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransportApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson2_Exceptions.пример_интерфейсов.TransportApp" />
+    <configuration name="TreeApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson3_Collections.TreeApp" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson2_Exceptions.множественное_наследование.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TryWithResourcesApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson11_InputOuput.TryWithResourcesApp" />
-      <module name="gb_JavaCore2_lessons_Gus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson11_InputOuput.*" />
+          <option name="PATTERN" value="lesson3_Collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,19 +118,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JdbcApp" />
-      <item itemvalue="Application.TryWithResourcesApp" />
-      <item itemvalue="Application.FileApp" />
-      <item itemvalue="Application.TransportApp" />
       <item itemvalue="Application.ExceptionApp" />
+      <item itemvalue="Application.ServerApp" />
+      <item itemvalue="Application.EchoClient" />
+      <item itemvalue="Application.ListApp" />
+      <item itemvalue="Application.TreeApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreeApp" />
+        <item itemvalue="Application.ListApp" />
+        <item itemvalue="Application.EchoClient" />
+        <item itemvalue="Application.ServerApp" />
         <item itemvalue="Application.ExceptionApp" />
-        <item itemvalue="Application.TransportApp" />
-        <item itemvalue="Application.FileApp" />
-        <item itemvalue="Application.TryWithResourcesApp" />
-        <item itemvalue="Application.JdbcApp" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646750574075</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add lesson2 Exceptions">
+      <created>1647368393706</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647368393706</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +206,7 @@
     <MESSAGE value="add lesson9 Generics" />
     <MESSAGE value="add lesson Stream Api and Optionals" />
     <MESSAGE value="add lesson10 DataBase" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lesson10 DataBase" />
+    <MESSAGE value="add lesson2 Exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lesson2 Exceptions" />
   </component>
 </project>
