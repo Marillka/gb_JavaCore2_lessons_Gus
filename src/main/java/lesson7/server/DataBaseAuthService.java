@@ -1,9 +1,7 @@
 package lesson7.server;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class DataBaseAuthService implements AuthService {
 
@@ -18,6 +16,29 @@ public class DataBaseAuthService implements AuthService {
             this.nick = nick;
         }
 
+        public String getLogin() {
+            return login;
+        }
+
+        public void setLogin(String login) {
+            this.login = login;
+        }
+
+        public String getPassword() {
+            return password;
+        }
+
+        public void setPassword(String password) {
+            this.password = password;
+        }
+
+        public String getNick() {
+            return nick;
+        }
+
+        public void setNick(String nick) {
+            this.nick = nick;
+        }
     }
 
     private List<Entry> entries;
@@ -39,22 +60,14 @@ public class DataBaseAuthService implements AuthService {
 
         entries = new ArrayList<>();
 
-        for (int i = 1; i < 3; i++) {
+        for (int i = 1; i <= 3; i++) {
             entries.add(new Entry(getLogin(i), getPassword(i), getNick(i)));
             entries.add(new Entry(getLogin(i), getPassword(i), getNick(i)));
             entries.add(new Entry(getLogin(i), getPassword(i), getNick(i)));
         }
 
-
     }
 
-//    public void createTable() throws SQLException {
-//        statement.executeUpdate("create table if not exists users ("
-//                + "id integer primary key autoincrement not null,"
-//                + "login text not null,"
-//                + "password text not null,"
-//                + "nick text not null unique");
-//    }
 
     private static void createTable() throws SQLException {
         statement.executeUpdate("create table if not exists users (\n" +
@@ -99,6 +112,33 @@ public class DataBaseAuthService implements AuthService {
         }
     }
 
+    public void changeNick(String login, String password, String newNickname) {
+        // создали мапу
+        Map<String, String> userMap = new HashMap<>();
+        // засунули в мапу логин и пароль
+        for (int i = 0; i < entries.size(); i++) {
+            userMap.put(entries.get(i).getLogin(), entries.get(i).getPassword());
+        }
+        // если вводимые данные совпадают
+        String valuePass = userMap.get(login);
+        try {
+            if (valuePass.equals(password)) {
+                statement.executeUpdate("update users set nick = '" + newNickname + "' where login = '" + login + "'");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+//    1
+//    UPDATE comments
+//2
+//    SET email = 'zyx@email.com'
+//3
+//    WHERE name = 'Shivam Mamgain';
+
+
     public String getLogin(int count) {
         try (ResultSet rs = statement.executeQuery("select login from users where id = " + count)) {
             while (rs.next()) {
@@ -138,60 +178,9 @@ public class DataBaseAuthService implements AuthService {
     @Override
     public Optional<String> getNickByLoginAndPass(String login, String pass) {
         // Сначал из всех записей что есть отфильтровали те, что подходят по логину и паролю. Если что то осталось то из entry достали nick. а findFirst() - если что то есть возвращает этот объект, если нет не возарвщает.
-        return  entries.stream()
+        return entries.stream()
                 .filter(entry -> entry.login.equals(login) && entry.password.equals(pass))
                 .map(entry -> entry.nick)
                 .findFirst();
-
-//        for (Entry entry: entries) {
-//            if (entry.login.equals(login) && entry.password.equals(pass)) {
-//                return Optional.of(entry.nick);// если нашли
-//            }
-//        }
-//        return Optional.empty();// если ничего не нашли
     }
-
-    //
-//    private static void readData() {
-//        // ResultSet - интерфейс, для чтения из БД. Множество результатов. Отчет с 1, а не с 0.
-//        try (ResultSet rs = statement.executeQuery("select * from students")) {
-//            while (rs.next()) {
-//                System.out.println(
-//                        rs.getInt(1)
-//                                + " "
-//                                + rs.getString("name")
-//                                + " "
-//                                + rs.getString(3)
-//                                + " "
-//                                + rs.getInt("score"));
-//            }
-//        } catch (Exception ex) {
-//            ex.printStackTrace();
-//        }
-//    }
-
-
-//    public String dbLength() {
-//        try (ResultSet rs = statement.executeQuery("select * from users where id = max")) {
-//            while (rs.next()) {
-//                int length = rs.getInt(1);
-//            }
-//        } catch (Exception ex) {
-//            ex.printStackTrace();
-//        }
-//    }
-
-
-    //    @Override
-//    public Optional<String> getNickByLoginAndPass(String login, String pass) {
-//        try (ResultSet rs = statement.executeQuery("select * from users")) {
-//            while (rs.next()) {
-//
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//    }
-
-
 }

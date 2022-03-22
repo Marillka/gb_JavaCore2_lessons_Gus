@@ -115,13 +115,18 @@ public class EchoClient extends JFrame {
 
         add(panel, BorderLayout.SOUTH);
 
-        JPanel loginPanel = new JPanel(new BorderLayout());
+        // верхняя панель с логином и паролем
+        JPanel loginPanel = new JPanel(new GridLayout());
+        // поле для логина
         JTextField loginField = new JTextField();
-        loginPanel.add(loginField, BorderLayout.WEST);
+        loginPanel.add(loginField, BorderLayout.EAST);
+        // поле для пароля
         JTextField passField = new JTextField();
-        loginPanel.add(passField, BorderLayout.CENTER);
+        loginPanel.add(passField, BorderLayout.WEST);
+        // кнопка авторизации
         JButton authButton = new JButton("Авторизоваться");
         loginPanel.add(authButton, BorderLayout.EAST);
+        // добавляем панель с логином и паролем
         add(loginPanel, BorderLayout.NORTH);
 
         authButton.addActionListener(new ActionListener() {

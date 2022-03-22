@@ -4,15 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71431243-f455-4a80-a51e-efc6007c7ca4" name="Changes" comment="add lesson2 Exceptions">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3_Collections/ListApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3_Collections/MapApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3_Collections/TreeApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3_Collections/User.java" afterDir="false" />
+    <list default="true" id="71431243-f455-4a80-a51e-efc6007c7ca4" name="Changes" comment="add lesson3 Collections">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/BufferedIOApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/ByteStreamApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/DataIOApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/FileIOApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/FileIOApp1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/ObjectIOApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/WriterApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/demo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/FileApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/FileApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/client/EchoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/client/EchoClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/server/DataBaseAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/DataBaseAuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/server/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/MyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson11_InputOuput/FileApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson11_InputOuput/FileApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson3_Collections/TreeApp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3_Collections/TreeApp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson3_Collections/TreeApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3_Collections/TreeApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/client/EchoClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/client/EchoClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/client/EchoClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/client/EchoClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/constants/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/constants/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/DataBaseAuthService$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/DataBaseAuthService$Entry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/DataBaseAuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/DataBaseAuthService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/MyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/MyServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.db" beforeDir="false" afterPath="$PROJECT_DIR$/users.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +66,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/gb_chat" />
     <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
   </component>
-  <component name="RunManager" selected="Application.TreeApp">
-    <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson7.client.EchoClient" />
+  <component name="RunManager" selected="Application.ObjectIOApp">
+    <configuration name="BufferedIOApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson11_InputOuput.BufferedIOApp" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson7.client.*" />
+          <option name="PATTERN" value="lesson11_InputOuput.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,13 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExceptionApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson2_Exceptions.lesson.ExceptionApp" />
+    <configuration name="ByteStreamApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson11_InputOuput.ByteStreamApp" />
       <module name="gb_JavaCore2_lessons_Gus" />
-      <option name="PROGRAM_PARAMETERS" value="10 10 19" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson2_Exceptions.lesson.*" />
+          <option name="PATTERN" value="lesson11_InputOuput.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson3_Collections.ListApp" />
+    <configuration name="FileIOApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson11_InputOuput.FileIOApp" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson3_Collections.*" />
+          <option name="PATTERN" value="lesson11_InputOuput.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson7.server.ServerApp" />
+    <configuration name="FileIOApp1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson11_InputOuput.FileIOApp1" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson7.server.*" />
+          <option name="PATTERN" value="lesson11_InputOuput.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson3_Collections.TreeApp" />
+    <configuration name="ObjectIOApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson11_InputOuput.ObjectIOApp" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson3_Collections.*" />
+          <option name="PATTERN" value="lesson11_InputOuput.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,19 +136,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ExceptionApp" />
-      <item itemvalue="Application.ServerApp" />
-      <item itemvalue="Application.EchoClient" />
-      <item itemvalue="Application.ListApp" />
-      <item itemvalue="Application.TreeApp" />
+      <item itemvalue="Application.ByteStreamApp" />
+      <item itemvalue="Application.FileIOApp" />
+      <item itemvalue="Application.FileIOApp1" />
+      <item itemvalue="Application.BufferedIOApp" />
+      <item itemvalue="Application.ObjectIOApp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TreeApp" />
-        <item itemvalue="Application.ListApp" />
-        <item itemvalue="Application.EchoClient" />
-        <item itemvalue="Application.ServerApp" />
-        <item itemvalue="Application.ExceptionApp" />
+        <item itemvalue="Application.ObjectIOApp" />
+        <item itemvalue="Application.BufferedIOApp" />
+        <item itemvalue="Application.FileIOApp1" />
+        <item itemvalue="Application.FileIOApp" />
+        <item itemvalue="Application.ByteStreamApp" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647368393706</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add lesson3 Collections">
+      <created>1647795584070</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1647795584070</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +232,7 @@
     <MESSAGE value="add lesson Stream Api and Optionals" />
     <MESSAGE value="add lesson10 DataBase" />
     <MESSAGE value="add lesson2 Exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lesson2 Exceptions" />
+    <MESSAGE value="add lesson3 Collections" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lesson3 Collections" />
   </component>
 </project>

@@ -28,9 +28,8 @@ public class ClientHandler {
             this.out = new DataOutputStream(socket.getOutputStream());
             new Thread(() -> {
                 try {
-                    authentification();
+                    authentication();
                     readMessage();
-
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 } finally {
@@ -38,22 +37,20 @@ public class ClientHandler {
                 }
             }).start();
 
-
         } catch (IOException ex) {
             throw new RuntimeException("Проблема при создании обработчика");
         }
     }
 
     // auth    login    pass
-
-    private void authentification() throws IOException {
+    private void authentication() throws IOException {
         while (true) {
             String str = in.readUTF();
             if (str.startsWith(Constants.AUTH_COMMAND)) {
                 String[] tokens = str.split("\\s+");// разбивает строку по пробелам. Получим массив длинной 3. В нулевом элементе команда, в первом логин, во втором пароль. \\s+ регулярное выражение, которое означает пробел один или больше пробелов.
                 Optional<String> nick = server.getAuthService().getNickByLoginAndPass(tokens[1], tokens[2]);
 
-                    if (nick.isPresent()) {// isPresent() - есть значение или нет
+                if (nick.isPresent()) {// isPresent() - есть значение или нет
                     // Авторизовались
                     name = nick.get();// так как nick - Optional, должны достать из него значение
                     sendMessage(Constants.AUTH_OK_COMMAND + " " + nick);
@@ -68,6 +65,8 @@ public class ClientHandler {
         }
     }
 
+
+
     public void sendMessage(String message) {
         try {
             out.writeUTF(message);
@@ -79,16 +78,27 @@ public class ClientHandler {
     private void readMessage() throws IOException {
         while (true) {
             String messageFromClient = in.readUTF();
-            //hint: можем получать команду
+
+            // получение активных клиентов
             if (messageFromClient.startsWith(Constants.CLIENTS_LIST_COMMAND)) {
                 sendMessage((server.getActiveClients()));
-            } else {
+
+            } else { // иначе
                 System.out.println("Сообщение от " + name + ": " + messageFromClient);
+
+                // прервывание
                 if (messageFromClient.equals(Constants.END_COMMAND)) {
                     break;
                 }
+
+                // смена ника
+                if (messageFromClient.equals(Constants.CHANGE_NICK_COMMAND)) {
+
+                }
+
                 server.broadcastMessage(name + ": " + messageFromClient);
             }
+
         }
     }
 

@@ -35,7 +35,6 @@ public class MyServer {
             authService = new DataBaseAuthService();
             authService.start();
 
-
             clients = new ArrayList<>();
 
             while (true) {
