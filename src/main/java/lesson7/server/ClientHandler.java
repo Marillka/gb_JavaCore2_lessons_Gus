@@ -2,10 +2,9 @@ package lesson7.server;
 
 import lesson7.constants.Constants;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.Optional;
 
 /**
@@ -29,6 +28,7 @@ public class ClientHandler {
             new Thread(() -> {
                 try {
                     authentication();
+                    // история переписки
                     readMessage();
                 } catch (IOException ex) {
                     ex.printStackTrace();
@@ -66,7 +66,6 @@ public class ClientHandler {
     }
 
 
-
     public void sendMessage(String message) {
         try {
             out.writeUTF(message);
@@ -76,29 +75,57 @@ public class ClientHandler {
     }
 
     private void readMessage() throws IOException {
+
+        // создание доступа к файлу
+        File file = new File("generalHistory.txt");
+        // если файла нет - создать
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                System.out.println("Не удалось создать файл");
+            }
+        }
+
+        // выводим историю сообщений на экран
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String str;
+            while ((str = reader.readLine()) != null ) {
+                server.broadcastMessage(str);
+            }
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+
+        // читаем сообщение
         while (true) {
             String messageFromClient = in.readUTF();
 
             // получение активных клиентов
             if (messageFromClient.startsWith(Constants.CLIENTS_LIST_COMMAND)) {
                 sendMessage((server.getActiveClients()));
-
             } else { // иначе
                 System.out.println("Сообщение от " + name + ": " + messageFromClient);
-
                 // прервывание
                 if (messageFromClient.equals(Constants.END_COMMAND)) {
                     break;
                 }
-
                 // смена ника
                 if (messageFromClient.equals(Constants.CHANGE_NICK_COMMAND)) {
 
                 }
 
+                // рассылка сообщения всем в чат
                 server.broadcastMessage(name + ": " + messageFromClient);
-            }
 
+                // пишем в файл
+                try (Writer writer = new BufferedWriter(new FileWriter(file, true))) {
+                    writer.append(name + ": " + messageFromClient + " \n");
+                } catch (IOException exception) {
+                    exception.printStackTrace();
+                }
+
+            }
         }
     }
 
