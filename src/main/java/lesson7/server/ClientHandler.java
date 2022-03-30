@@ -6,12 +6,15 @@ import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Optional;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * Обработчик для конкретного клиента
  */
 public class ClientHandler {
 
+    ExecutorService service = Executors.newCachedThreadPool();
     private MyServer server;
     private Socket socket;
     private DataInputStream in;
@@ -25,7 +28,7 @@ public class ClientHandler {
             this.socket = socket;
             this.in = new DataInputStream(socket.getInputStream());
             this.out = new DataOutputStream(socket.getOutputStream());
-            new Thread(() -> {
+            service.execute(() -> {
                 try {
                     authentication();
                     // история переписки
@@ -35,7 +38,19 @@ public class ClientHandler {
                 } finally {
                     closeConnection();
                 }
-            }).start();
+            });
+
+//            new Thread(() -> {
+//                try {
+//                    authentication();
+//                    // история переписки
+//                    readMessage();
+//                } catch (IOException ex) {
+//                    ex.printStackTrace();
+//                } finally {
+//                    closeConnection();
+//                }
+//            }).start();
 
         } catch (IOException ex) {
             throw new RuntimeException("Проблема при создании обработчика");

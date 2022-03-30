@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71431243-f455-4a80-a51e-efc6007c7ca4" name="Changes" comment="add lesson5 Multithreading">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/CounterApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/CounterApp1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/CounterApp2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/DeadlockApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/ExecutorApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/Interrupt2App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/InterruptApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/Main.java" afterDir="false" />
+    <list default="true" id="71431243-f455-4a80-a51e-efc6007c7ca4" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/HomeWork/WaitNotify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/CountDownApp3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/CyclicApp4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/DemoApp1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/LockApp5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/SemaphoreApp2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/VolatileApp6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/demo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/FileApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/FileApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/WriterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson11_InputOuput/WriterApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.db" beforeDir="false" afterPath="$PROJECT_DIR$/users.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +58,13 @@
       <recent name="lesson12_MultithreadingPart1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EchoClient">
-    <configuration name="EchoClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson7.client.EchoClient" />
+  <component name="RunManager" selected="Application.WaitNotify">
+    <configuration name="CountDownApp3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson13_MultithreadingPart2.CountDownApp3" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson7.client.*" />
+          <option name="PATTERN" value="lesson13_MultithreadingPart2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExecutorApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson12_MultithreadingPart1.ExecutorApp" />
+    <configuration name="CyclicApp4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson13_MultithreadingPart2.CyclicApp4" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson12_MultithreadingPart1.*" />
+          <option name="PATTERN" value="lesson13_MultithreadingPart2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Interrupt2App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson12_MultithreadingPart1.Interrupt2App" />
+    <configuration name="SemaphoreApp2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson13_MultithreadingPart2.SemaphoreApp2" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson12_MultithreadingPart1.*" />
+          <option name="PATTERN" value="lesson13_MultithreadingPart2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InterruptApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson12_MultithreadingPart1.InterruptApp" />
+    <configuration name="VolatileApp6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson13_MultithreadingPart2.VolatileApp6" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson12_MultithreadingPart1.*" />
+          <option name="PATTERN" value="lesson13_MultithreadingPart2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson7.server.ServerApp" />
+    <configuration name="WaitNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson12_MultithreadingPart1.HomeWork.WaitNotify" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson7.server.*" />
+          <option name="PATTERN" value="lesson12_MultithreadingPart1.HomeWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,19 +125,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.InterruptApp" />
-      <item itemvalue="Application.Interrupt2App" />
-      <item itemvalue="Application.ExecutorApp" />
-      <item itemvalue="Application.ServerApp" />
-      <item itemvalue="Application.EchoClient" />
+      <item itemvalue="Application.SemaphoreApp2" />
+      <item itemvalue="Application.CountDownApp3" />
+      <item itemvalue="Application.CyclicApp4" />
+      <item itemvalue="Application.VolatileApp6" />
+      <item itemvalue="Application.WaitNotify" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EchoClient" />
-        <item itemvalue="Application.ServerApp" />
-        <item itemvalue="Application.ExecutorApp" />
-        <item itemvalue="Application.Interrupt2App" />
-        <item itemvalue="Application.InterruptApp" />
+        <item itemvalue="Application.WaitNotify" />
+        <item itemvalue="Application.VolatileApp6" />
+        <item itemvalue="Application.CyclicApp4" />
+        <item itemvalue="Application.CountDownApp3" />
+        <item itemvalue="Application.SemaphoreApp2" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648064847548</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=".">
+      <created>1648397844662</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1648397844662</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,6 +245,7 @@
     <MESSAGE value="add lesson3 Collections" />
     <MESSAGE value="add lesson11 InputOutputStreams" />
     <MESSAGE value="add lesson5 Multithreading" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lesson5 Multithreading" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
