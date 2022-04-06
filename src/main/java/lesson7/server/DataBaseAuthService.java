@@ -80,7 +80,6 @@ public class DataBaseAuthService implements AuthService {
 
     @Override
     public void stop() {
-
         try {
             if (statement != null) {
                 statement.close();
@@ -129,14 +128,6 @@ public class DataBaseAuthService implements AuthService {
             e.printStackTrace();
         }
     }
-
-
-//    1
-//    UPDATE comments
-//2
-//    SET email = 'zyx@email.com'
-//3
-//    WHERE name = 'Shivam Mamgain';
 
 
     public String getLogin(int count) {

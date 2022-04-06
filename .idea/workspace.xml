@@ -5,16 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71431243-f455-4a80-a51e-efc6007c7ca4" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/HomeWork/WaitNotify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/CountDownApp3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/CyclicApp4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/DemoApp1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/LockApp5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/SemaphoreApp2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/VolatileApp6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/logfile.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/HomeWork/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/HomeWork/MainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/HomeWork/Race.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/HomeWork/Road.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/HomeWork/Stage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/HomeWork/Tunnel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/HomeWork/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/Vitalik/CountDownLatchExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/Vitalik/CyclicBarrierExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/Vitalik/LockExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson13_MultithreadingPart2/Vitalik/SemaphoreExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson14_ОбзорСредствРазработки/AssertApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson14_ОбзорСредствРазработки/Battery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson14_ОбзорСредствРазработки/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson14_ОбзорСредствРазработки/CurrentClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson14_ОбзорСредствРазработки/HomeWork/ArrayExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson14_ОбзорСредствРазработки/HomeWork/Ex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ArrayExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson13_MultithreadingPart2/HomeWork/Car.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson13_MultithreadingPart2/HomeWork/MainClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson13_MultithreadingPart2/HomeWork/Race.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson13_MultithreadingPart2/HomeWork/Road.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson13_MultithreadingPart2/HomeWork/Stage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson13_MultithreadingPart2/HomeWork/Tunnel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson13_MultithreadingPart2/Vitalik/CountDownLatchExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson13_MultithreadingPart2/Vitalik/CyclicBarrierExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson13_MultithreadingPart2/Vitalik/LockExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson13_MultithreadingPart2/Vitalik/SemaphoreExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson14_ОбзорСредствРазработки/AssertApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson14_ОбзорСредствРазработки/Battery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson14_ОбзорСредствРазработки/Calculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson14_ОбзорСредствРазработки/CurrentClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson14_ОбзорСредствРазработки/HomeWork/ArrayExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/lesson14_ОбзорСредствРазработки/HomeWork/Ex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ArrayExampleTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/CalculatorTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/HomeWork/WaitNotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson12_MultithreadingPart1/HomeWork/WaitNotify.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/server/DataBaseAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/DataBaseAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson7/server/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/server/MyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson12_MultithreadingPart1/HomeWork/WaitNotify.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson12_MultithreadingPart1/HomeWork/WaitNotify.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/DataBaseAuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/DataBaseAuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/server/MyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/server/MyServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.db" beforeDir="false" afterPath="$PROJECT_DIR$/users.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,21 +91,30 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gb_A&amp;DS_lessons" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/lesson14_ОбзорСредствРазработки/HomeWork" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\gb_JavaCore2_lessons_Gus\src\main\java\lesson14_ОбзорСредствРазработки\HomeWork" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\gb_JavaCore2_lessons_Gus\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lesson12_MultithreadingPart1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WaitNotify">
-    <configuration name="CountDownApp3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson13_MultithreadingPart2.CountDownApp3" />
+  <component name="RunManager" selected="JUnit.ArrayExampleTest">
+    <configuration name="Ex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson14_ОбзорСредствРазработки.HomeWork.Ex" />
       <module name="gb_JavaCore2_lessons_Gus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson13_MultithreadingPart2.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,72 +122,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CyclicApp4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson13_MultithreadingPart2.CyclicApp4" />
+    <configuration name="ArrayExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gb_JavaCore2_lessons_Gus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson13_MultithreadingPart2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayExampleTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SemaphoreApp2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson13_MultithreadingPart2.SemaphoreApp2" />
+    <configuration name="ArrayExampleTest.testCheckFonOneAndFour2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gb_JavaCore2_lessons_Gus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson13_MultithreadingPart2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayExampleTest" />
+      <option name="METHOD_NAME" value="testCheckFonOneAndFour2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolatileApp6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson13_MultithreadingPart2.VolatileApp6" />
+    <configuration name="ArrayExampleTest.testCheckFonOneAndFour3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gb_JavaCore2_lessons_Gus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson13_MultithreadingPart2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayExampleTest" />
+      <option name="METHOD_NAME" value="testCheckFonOneAndFour3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaitNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson12_MultithreadingPart1.HomeWork.WaitNotify" />
+    <configuration name="ArrayExampleTest.testCheckFonOneAndFour4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gb_JavaCore2_lessons_Gus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson12_MultithreadingPart1.HomeWork.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayExampleTest" />
+      <option name="METHOD_NAME" value="testCheckFonOneAndFour4" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SemaphoreApp2" />
-      <item itemvalue="Application.CountDownApp3" />
-      <item itemvalue="Application.CyclicApp4" />
-      <item itemvalue="Application.VolatileApp6" />
-      <item itemvalue="Application.WaitNotify" />
+      <item itemvalue="Application.Ex" />
+      <item itemvalue="JUnit.ArrayExampleTest.testCheckFonOneAndFour2" />
+      <item itemvalue="JUnit.ArrayExampleTest.testCheckFonOneAndFour3" />
+      <item itemvalue="JUnit.ArrayExampleTest.testCheckFonOneAndFour4" />
+      <item itemvalue="JUnit.ArrayExampleTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WaitNotify" />
-        <item itemvalue="Application.VolatileApp6" />
-        <item itemvalue="Application.CyclicApp4" />
-        <item itemvalue="Application.CountDownApp3" />
-        <item itemvalue="Application.SemaphoreApp2" />
+        <item itemvalue="JUnit.ArrayExampleTest" />
+        <item itemvalue="Application.Ex" />
+        <item itemvalue="JUnit.ArrayExampleTest.testCheckFonOneAndFour4" />
+        <item itemvalue="JUnit.ArrayExampleTest.testCheckFonOneAndFour3" />
+        <item itemvalue="JUnit.ArrayExampleTest.testCheckFonOneAndFour2" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648397844662</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=".">
+      <created>1648661803848</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1648661803848</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

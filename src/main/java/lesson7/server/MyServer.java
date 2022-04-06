@@ -1,6 +1,13 @@
 package lesson7.server;
 
+
+
+
+import lesson14_ОбзорСредствРазработки.CurrentClass;
 import lesson7.constants.Constants;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -8,6 +15,8 @@ import java.net.Socket;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
 /**
@@ -25,6 +34,11 @@ public class MyServer {
      */
     private List<ClientHandler> clients;
 
+    private ExecutorService executorService;
+
+    private static final Logger logger = LogManager.getLogger(CurrentClass.class);
+//(запущен, произошла ошибка, клиент подключился, клиент прислал сообщение/команду
+
 
     public AuthService getAuthService() {
         return authService;
@@ -32,18 +46,20 @@ public class MyServer {
 
     public MyServer() {
         try (ServerSocket server = new ServerSocket(Constants.SERVER_PORT)) {
+            logger.trace("Сервер запущен");
+            executorService = Executors.newCachedThreadPool();
             authService = new DataBaseAuthService();
             authService.start();
-
             clients = new ArrayList<>();
-
             while (true) {
                 System.out.println("Сервер ожидает подключения");
                 Socket socket = server.accept();
+                logger.trace("Клиент подключился");
                 System.out.println("Клиент подключился");
-                new ClientHandler(this, socket);
+                new ClientHandler(executorService,this, socket);
             }
         } catch (IOException | SQLException ex) {
+            logger.error("Ошибка в работе сервера");
             System.out.println("Ошибка в работе сервера.");
             ex.printStackTrace();
         } finally {
